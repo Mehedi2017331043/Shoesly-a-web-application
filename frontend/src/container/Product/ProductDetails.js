@@ -36,7 +36,6 @@ const ProductDetails = () => {
                                         className='CarouselImage'
                                         key={item.url}
                                         src={item.url}
-                                        alt={`${i} Slide`}
                                     />
                                 ))
                             }
