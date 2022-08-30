@@ -23,10 +23,10 @@ const userSchema = new mongoose.Schema({
         minLength: 4,
         select: false
     },
-    newcomer: {
+    avatar: {
         public_id: {
             type: String,
-            required: true
+            // required: true
         },
         url: {
             type: String,

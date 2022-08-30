@@ -12,6 +12,7 @@ const options={
   transition:transitions.SCALE
 }
 
+
 root.render(
   <Provider store={store}>
       <App />

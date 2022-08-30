@@ -17,6 +17,7 @@ exports.allProducts = catchAsyncErrors(async (req, res) => {
         success: true,
         NumberOfProduct: productCount,
         products,
+        resultPerPage,
     })
 })
 

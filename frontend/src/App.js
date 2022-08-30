@@ -9,6 +9,7 @@ import About from "./container/About/About.js"
 import ProductDetails from './container/Product/ProductDetails.js'
 import Products from "./container/Product/Products.js"
 import Search from "./container/Product/Search.js";
+import LoginSignUp from './container/User/LoginSignUp';
 function App() {
   React.useEffect(() => {
     WebFont.load({
@@ -21,10 +22,12 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route const path="/" element={<Home />} />
-        <Route const path="/singleProduct/:id" element={<ProductDetails />} />
-        <Route const path="/allProducts" element={<Products />} />
-        <Route const path="/search" element={<Search />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/singleProduct/:id" element={<ProductDetails />} />
+        <Route exact path="/allProducts" element={<Products />} />
+        <Route  path="/allProducts/:keyword" element={<Products />} />
+        <Route  exact path="/search" element={<Search />} />
+        <Route  exact path="/login" element={<LoginSignUp />} />
       </Routes>
       <Footer />
     </Router>
