@@ -7,15 +7,11 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
-import { withAlert } from 'react-alert';
 
 const LoginSignUp = ({history}) => {
 
     const navigate = useNavigate();
-
-
     const dispatch = useDispatch();
-    const alert = withAlert();
     const { error, loading, isAuthenticate } = useSelector(
         (state) => state.user
     );
@@ -73,14 +69,13 @@ const LoginSignUp = ({history}) => {
     useEffect(() => {
         console.log(isAuthenticate);
         if (error) {
-            alert.error(error);
+            alert(error);
             dispatch(clearErrors());
         }
         if (isAuthenticate) {
-            console.log('hi');
             navigate('/')
         }
-    }, [dispatch, error, alert,history,isAuthenticate]);
+    }, [dispatch, error,history,isAuthenticate]);
 
     const switchTabs = (e, tab) => {
         if (tab === "login") {
