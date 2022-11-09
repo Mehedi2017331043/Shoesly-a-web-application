@@ -1,4 +1,4 @@
-# CSE333-WEB-Solution-of-PharmaMarket-Supply
+# CSE446-Shoesly-a-web-application
 An academic project  for ensuring supply  of medicine from  pharmacy factory to  pharmacy and patient by a web-app 
 
 
@@ -9,6 +9,7 @@ We created this for educational purpose.This is developed using mern stack
 Once the repository is cloned you will see two folders 
 1.Client
 2.Server
+3.Bank
 
 you need to go to client folder and need to run
 # npm install && npm start
@@ -38,7 +39,3 @@ You need to get these api tokens from
 mapbox.api
 emailjs.com
 mongo atlas
-
-There is a preview of this project available on https://drive.google.com/file/d/1SERQulIeXDx3ZZmL3eJxBveB7DeXGpa2/view?usp=sharing
-
-on this link you can see a demo version of this project spoken in bengali
